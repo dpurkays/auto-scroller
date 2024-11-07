@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    width: 200px;
+    background-color: #f0f4f8;
+    text-align: center;
+    color: #333;
+    border-radius: 8px;
+}
+
+.slider-container {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#speedSlider {
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.8;
+    border-radius: 4px;
+    transition: opacity 0.2s;
+    margin-top: 5px;
+}
+
+/* Slider thumb styling */
+#speedSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #007acc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#speedSlider::-webkit-slider-thumb:hover {
+    background-color: #005ea0;
+}
+
+/* Button container */
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button styling */
+button {
+    padding: 8px 16px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005ea0;
+}
+
+.attribution {
+    font-size: 10px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.attribution a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
